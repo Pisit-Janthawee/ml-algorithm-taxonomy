@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+# render / test artefacts from scripts/render.py
+scripts/_*
+*.html
+*.png
+# draw.io backups and personal copies
+*.bkp
+*.drawio.bkp
+outputs/* copy.drawio
