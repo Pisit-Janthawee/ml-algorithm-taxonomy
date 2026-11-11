@@ -25,6 +25,7 @@ Open **`outputs/ML Algorithm Taxonomy.drawio`** in draw.io (desktop, web, or the
 |---|---|
 | `inputs/ML Empiral Diagram.drawio` | Original hand-made diagram (style reference) |
 | `outputs/ML Algorithm Taxonomy.drawio` | Generated taxonomy diagram |
+| `exports/png/` | PNG export of every page (one image per page) |
 | `scripts/` | Python generator: see [`scripts/README.md`](scripts/README.md) |
 
 ## Rebuild
@@ -36,3 +37,10 @@ python -I build.py "../outputs/ML Algorithm Taxonomy.drawio"
 
 Pure Python 3 (standard library only). `render.py` (optional, for PNG previews) needs Google Chrome.
 Rebuilding overwrites manual edits made in draw.io.
+
+Re-export the PNGs (needs Google Chrome + internet for the draw.io viewer):
+
+```bash
+cd scripts
+python -I export_png.py "../outputs/ML Algorithm Taxonomy.drawio" ../exports/png --scale 1.5
+```

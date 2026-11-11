@@ -4,6 +4,7 @@ __pycache__/
 scripts/_*
 *.html
 *.png
+!exports/png/*.png
 # draw.io backups and personal copies
 *.bkp
 *.drawio.bkp
